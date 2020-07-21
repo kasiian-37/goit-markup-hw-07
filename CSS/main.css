@@ -635,7 +635,7 @@ section {
 .button-styles:hover, .button-styles:focus {
   color: #2196f3;
   background-color: #ffffff;
-  border-color: 1px solid #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .button-styles-foot {
@@ -671,7 +671,7 @@ section {
   color: #2196f3;
   fill: #2196f3;
   background-color: #ffffff;
-  border-color: 1px solid #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .button-style {
