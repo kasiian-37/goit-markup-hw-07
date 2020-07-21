@@ -1,0 +1,30 @@
+.our-customer {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customer-list {
+  display: flex;
+  justify-content: space-between;
+}
+.customer-li {
+  display: flex;
+  & .company:hover,
+  & .company:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.company {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 170px;
+  color: $social-link-color;
+  border: 1px solid $social-link-color;
+  border-radius: 4px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}

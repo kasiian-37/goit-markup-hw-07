@@ -1,0 +1,137 @@
+.foot {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: $ghost-color;
+}
+.foot-box {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.cont-add {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 69px;
+}
+.foot-link {
+  display: flex;
+  padding-top: 72px;
+  padding-bottom: 100px;
+  margin: 0px;
+}
+.foot-link-social-link {
+  display: block;
+  margin-right: 94px;
+}
+/* подписка */
+.foot-link-social {
+  display: block;
+  //   box-sizing: border-box;
+}
+.telega-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.email {
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $ghost-color;
+  color: $primary-white-color;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.dial {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.foot-li {
+  display: block;
+}
+.adress-a:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.sity {
+  display: block;
+  margin-bottom: 9px;
+  color: $primary-white-color;
+}
+.adress-footer {
+  color: $secondary-ghost;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.foot-b {
+  display: block;
+  margin-bottom: 20px;
+  color: $primary-white-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+.social-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+  & .action-foot {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: $primary-white-color;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition-property: $backgraund-color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+  & .action-foot:hover,
+  & .action-foot:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
+.social-link-footer li:not(:last-child) {
+  margin-right: 10px;
+}
+.end {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  margin: 0px;
+  background: $ghost-color;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}

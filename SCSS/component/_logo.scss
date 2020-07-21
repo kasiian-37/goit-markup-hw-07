@@ -1,0 +1,30 @@
+.main-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 85px;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: $text-logo;
+}
+.blue {
+  color: $accent-color;
+}
+
+.main-logo-foot {
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  color: $primary-white-color;
+}
+.blue {
+  color: $accent-color;
+}

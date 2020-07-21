@@ -1,0 +1,10 @@
+.filter-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 93px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  & .filter-li:not(:last-child) {
+    margin-right: 8px;
+  }
+}

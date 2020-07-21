@@ -1,0 +1,109 @@
+.conteiner-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
+  background-color: $primary-white-color;
+}
+.main-nav {
+  display: flex;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #ececec;
+}
+.link-nav {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  & .link :hover,
+  & .link :focus {
+    color: $accent-color;
+    transition: color $transition-values;
+  }
+}
+.link-current {
+  color: $accent-color;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}
+.nav-li {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+
+    opacity: 0;
+    transform: scaleX(0);
+    transition: transform $transition-values, opacity $transition-values;
+  }
+  &:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+.link .nav-li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.adress-header {
+  margin-left: auto;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+
+  & .link :hover,
+  & .link :focus {
+    color: $accent-color;
+  }
+}
+.link .add-li:not(:first-child) {
+  margin-left: 30px;
+}
+.add-li {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  & a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: color $transition-values;
+  }
+  & .icon {
+    margin-right: 10px;
+  }
+}
